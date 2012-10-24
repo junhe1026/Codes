@@ -5,10 +5,11 @@ import java.util.List;
 
 import deliverychannel.OnlineDeliveryChannel;
 
+import smartcard.CardholderInterface;
 import smartcard.SmartCard;
 
 
-public class CompanyCardholder {
+public class CompanyCardholder implements CardholderInterface{
     private String companyName;
     private OnlineDeliveryChannel deliveryChannel;
     private List<SmartCard> cards = new ArrayList<SmartCard>();
@@ -22,7 +23,7 @@ public class CompanyCardholder {
         cards.add(card);
     }
 
-    public void sendFax(String message) {
+    public void send(String message) {
         System.out.println("CompanyCardHolder: Attention " + companyName + ", you have a new fax");
         System.out.println("    Message is: " + message);
     }
@@ -37,4 +38,5 @@ public class CompanyCardholder {
     public OnlineDeliveryChannel getDeliveryChannel() {
         return deliveryChannel;
     }
+
 }

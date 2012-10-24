@@ -1,15 +1,16 @@
 package request;
 
+import smartcard.CardholderInterface;
 import smartcard.SmartCard;
 import application.Application;
 import cardholder.Cardholder;
 
 public class ApplicationRequest {
-    private Cardholder cardholder;
+    private CardholderInterface cardholder;
     private Application application;
     private String cardNumber;
 
-    public ApplicationRequest(Cardholder cardholder, Application application, String cardNumber) {
+    public ApplicationRequest(CardholderInterface cardholder, Application application, String cardNumber) {
         this.cardholder = cardholder;
         this.application = application;
         this.cardNumber = cardNumber;

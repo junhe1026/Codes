@@ -1,9 +1,8 @@
 package deliverychannel;
 
-import smartcard.SmartCard;
 
 public class OnlineDeliveryChannel {
-    public void deliverApplication(final SmartCard card, final String program) {
+    public void deliverApplication(final AbstractSmartCard card, final String program) {
         // we are delivering the application asynchronously
         // -- i.e. when the user logs in to load the application
         new Thread(new Runnable() {

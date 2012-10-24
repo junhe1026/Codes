@@ -5,10 +5,11 @@ import java.util.List;
 
 import deliverychannel.OnlineDeliveryChannel;
 
+import smartcard.CardholderInterface;
 import smartcard.SmartCard;
 
 
-public class Cardholder {
+public class Cardholder implements CardholderInterface {
     private String name;
     private OnlineDeliveryChannel deliveryChannel;
     private List<SmartCard> cards = new ArrayList<SmartCard>();
@@ -22,7 +23,7 @@ public class Cardholder {
         cards.add(card);
     }
 
-    public void sendEmail(String message) {
+    public void send(String message) {
         System.out.println("Cardholder: Hi " + name + ", you have new e-mail");
         System.out.println("    Message is: " + message);
     }

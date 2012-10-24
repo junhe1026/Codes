@@ -1,12 +1,12 @@
 package smartcard;
 
-import cardholder.Cardholder;
+import deliverychannel.AbstractSmartCard;
 
-public class SmartCard {
+public class SmartCard implements AbstractSmartCard{
     private String cardNumber;
-    private Cardholder owner;
+    private CardholderInterface owner;
 
-    public SmartCard(Cardholder owner, String cardNumber) {
+    public SmartCard(CardholderInterface owner, String cardNumber) {
         this.owner = owner;
         this.cardNumber = cardNumber;
     }
@@ -21,6 +21,6 @@ public class SmartCard {
 
     public void notifyOfNewApplication(String program) {
         // notify the owner
-        owner.sendEmail("The following application has been delivered to your card: " + program);
+        owner.send("The following application has been delivered to your card: " + program);
     }
 }
