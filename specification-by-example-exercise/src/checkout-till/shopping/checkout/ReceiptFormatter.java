@@ -1,6 +1,7 @@
 package shopping.checkout;
 
 import java.math.BigDecimal;
+import java.util.Vector;
 
 public class ReceiptFormatter {
 	private final Printer printer;
@@ -17,6 +18,20 @@ public class ReceiptFormatter {
 	public void printTotalLine(BigDecimal total) {
 		printer.print("Total = " + total + "\n");
 	}
+
+    public void printDiscountLine(BigDecimal discount){
+        printer.print("Discount = -"+discount+"\n");
+    }
+
+    public void printFreeProductsLines(Vector<Product> products){
+        for (int i = 0; i < products.size(); i++){
+            printer.print("--for "+products.get(i).name()+" "+products.get(i).unitPrice());
+        }
+    }
+
+    public void printSubTotalLine(BigDecimal subtotal){
+        printer.print("SubTotal = " + subtotal + "\n");
+    }
 	
 	public void endOfReceipt() {
 		printer.feed();

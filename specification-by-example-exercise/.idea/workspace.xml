@@ -88,9 +88,12 @@
       <file leaf-file-name="Checkout.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/Checkout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="119" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.6571429">
+            <state line="80" column="43" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.6242171">
               <folding>
-                <element signature="e#580#589#0" expanded="true" />
+                <element signature="e#656#673#0" expanded="true" />
+                <element signature="e#736#745#0" expanded="true" />
+                <element signature="e#3551#3576#0" expanded="true" />
+                <element signature="e#3858#3867#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,7 +111,7 @@
       <file leaf-file-name="TheCustomerPurchases.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/acceptance-tests/TheCustomerPurchases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="52" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+            <state line="22" column="32" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,8 +120,10 @@
       <file leaf-file-name="ReceiptFormatter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/ReceiptFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="19" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="25" column="21" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,7 +131,7 @@
       <file leaf-file-name="Printer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="9" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
+            <state line="18" column="9" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,11 +149,8 @@
       <file leaf-file-name="TPOTProductRange.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/TPOTProductRange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="48" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#321#338#0" expanded="true" />
-              </folding>
+            <state line="63" column="24" selection-start="1923" selection-end="1931" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/acceptance-tests/GivenTheFollowingTPOTProducts.java" />
         <option value="$PROJECT_DIR$/src/acceptance-tests/shopping/checkout/fakes/FakeProductRange.java" />
         <option value="$PROJECT_DIR$/src/checkout-till/shopping/checkout/TPOTProductRange.java" />
+        <option value="$PROJECT_DIR$/src/checkout-till/shopping/checkout/ReceiptFormatter.java" />
         <option value="$PROJECT_DIR$/src/checkout-till/shopping/checkout/Checkout.java" />
       </list>
     </option>
@@ -184,8 +187,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="1920" />
-    <option name="height" value="1032" />
+    <option name="width" value="1680" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -218,6 +221,30 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,19 +351,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="fit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -482,7 +496,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1920" height="1032" extended-state="6" />
+    <frame x="0" y="24" width="1680" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -490,17 +504,17 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990665" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905483" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32788798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16720085" sideWeight="0.64261556" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35738444" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.64294046" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3570595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JSTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -572,119 +586,97 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/reports/running-total.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-1.6.0-openjdk-amd64/jre/lib/rt.jar!/java/util/Map.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="41" selection-start="462" selection-end="463" vertical-scroll-proportion="0.31428573">
-          <folding />
-        </state>
+        <state line="21" column="41" selection-start="462" selection-end="463" vertical-scroll-proportion="0.31428573" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/acceptance-tests/GivenTheFollowingProducts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="36" selection-start="545" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="36" selection-start="545" selection-end="557" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/acceptance-tests/GivenTheFollowingTPOTProducts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="44" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="27" column="44" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/BarcodeScanListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="60" selection-start="467" selection-end="467" vertical-scroll-proportion="0.32142857" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fit/running-total.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="427" selection-end="427" vertical-scroll-proportion="-0.7490775" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/ProductRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="17" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/acceptance-tests/shopping/checkout/fakes/FakeProductRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="41" selection-start="1076" selection-end="1087" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/acceptance-tests/SystemUnderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/acceptance-tests/TheReceiptShows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="33" selection-start="579" selection-end="583" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="9" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
+        <state line="18" column="9" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/ReceiptFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="19" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="25" column="21" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/BarcodeScanListener.java">
+    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/TPOTProductRange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="60" selection-start="467" selection-end="467" vertical-scroll-proportion="0.32142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/acceptance-tests/SystemUnderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fit/running-total.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="427" selection-end="427" vertical-scroll-proportion="-0.7490775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/acceptance-tests/TheReceiptShows.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="579" selection-end="583" vertical-scroll-proportion="0.0">
+        <state line="63" column="24" selection-start="1923" selection-end="1931" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/acceptance-tests/TheCustomerPurchases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/ProductRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/acceptance-tests/shopping/checkout/fakes/FakeProductRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="41" selection-start="1076" selection-end="1087" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/TPOTProductRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="48" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#321#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0">
+        <state line="22" column="32" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/checkout-till/shopping/checkout/Checkout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="119" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.6571429">
+        <state line="80" column="43" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.6242171">
           <folding>
-            <element signature="e#580#589#0" expanded="true" />
+            <element signature="e#656#673#0" expanded="true" />
+            <element signature="e#736#745#0" expanded="true" />
+            <element signature="e#3551#3576#0" expanded="true" />
+            <element signature="e#3858#3867#0" expanded="true" />
           </folding>
         </state>
       </provider>
