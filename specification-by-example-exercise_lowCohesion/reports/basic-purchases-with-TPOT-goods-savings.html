@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link href="files/css/fitnesse.css" rel="stylesheet" type="text/css" />
+
+    <title>Receipt for Purchases-with-TPOT-goods</title>
+  </head>
+<body>	<link rel="stylesheet" type="text/css" href="files/css/fitnesse.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="files/css/fitnesse.css" media="print"/>
+<h1>Receipt for Purchases-with-TPOT-goods</h1><table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="3">Given the following products</td>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+
+        <td>Barcode</td>
+
+        <td>Unit Price</td>
+      </tr>
+
+      <tr>
+        <td>Milk</td>
+
+        <td>11111111</td>
+
+        <td>0.50</td>
+      </tr>
+
+      <tr>
+        <td>Cheese</td>
+
+        <td>22222222</td>
+
+        <td>1.00</td>
+      </tr>
+
+      <tr>
+        <td>Bread</td>
+
+        <td>33333333</td>
+
+        <td>0.75</td>
+      </tr>
+
+      <tr>
+        <td>Coke</td>
+
+        <td>44444444</td>
+
+        <td>1.00</td>
+      </tr>
+
+      <tr>
+        <td>chocolate</td>
+
+        <td>55555555</td>
+
+        <td>2.00</td>
+      </tr>
+
+      <tr>
+        <td>Wine</td>
+
+        <td>66666666</td>
+
+        <td>3.00</td>
+      </tr>
+    </table>
+<table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="3">Given the following T P O T products</td>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+
+        <td>Group</td>
+
+      </tr>
+
+      <tr>
+        <td>Milk</td>
+
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td>Cheese</td>
+
+        <td>2</td>
+
+      </tr>
+
+      <tr>
+        <td>Bread</td>
+
+        <td>2</td>
+
+      </tr>
+
+      </tr>
+    </table>
+    <table border="0">
+      <tr>
+        <td>Given the checkout has been initialised</td>
+      </tr>
+    </table><p>The customer buys two cartons of milk, one pack of cheese,
+  one loaf of bread and a bottle of wine. Total 5 items</p><table border="0">
+      <tr>
+        <td>The customer purchases</td>
+      </tr>
+	  
+	  <tr>
+	    <td>Product</td>
+	  </tr>
+	  
+      <tr>
+        <td>Milk</td>
+      </tr>
+
+      <tr>
+        <td>Cheese</td>
+      </tr>
+
+      <tr>
+        <td>Milk</td>
+      </tr>
+
+      <tr>
+        <td>Bread</td>
+      </tr>
+    
+      <tr>
+	<td>Wine</td>
+      </tr>
+
+      <tr>
+        <td>Milk</td>
+      </tr>
+    </table>
+    
+    <p>The receipt lists the product in the order that they were
+  scanned, except that all purchases of the same product are shown as a single
+  line on the receipt. The savings for TPOT products have been listed under products</p>
+  
+  <table bgcolor="" border="0">
+      <tr>
+        <td colspan="2">The receipt shows</td>
+      </tr>
+      
+      <tr>
+        <td>Line</td>
+        <td>Text</td>
+      </tr>
+
+      <tr class="receiptLine">
+        <td class="pass">1</td>
+        <td class="pass">3 Milk @ 0.50 each = 1.50</td>
+      </tr>
+
+      <tr class="receiptLine">
+        <td class="pass">2</td>
+        <td class="pass">1 Cheese @ 1.00 each = 1.00</td>
+      </tr>
+
+      <tr class="receiptLine">
+        <td class="pass">3</td>
+        <td class="pass">1 Bread @ 0.75 each = 0.75</td>
+      </tr>
+
+      <tr class="receiptLine">
+        <td class="pass">4</td>
+        <td class="pass">1 Wine @ 3.00 each = 3.00</td>
+      </tr>
+	
+      <tr class="receiptLine">
+        <td class="pass">5</td>
+        <td class="fail">SubTotal = 6.25 <span class="fit_label">expected</span><hr>Total = 6.25 <span class="fit_label">actual</span></td>
+      </tr>
+
+      <tr class="receiptLine">
+        <td class="pass">6</td>
+        <td class="fail">Discount = -0.50 <span class="fit_label">expected</span><hr>0 <span class="fit_label">actual</span></td>
+      </tr>
+      <tr class="receiptLine">
+        <td class="fail">7 <span class="fit_label">missing</span></td>
+        <td>--for milk 0.05</td>
+      </tr>
+	
+
+      <tr class="receiptLine">
+        <td class="fail">8 <span class="fit_label">missing</span></td>
+        <td>Total = 5.75</td>
+      </tr>
+    </table></body>
+</html>
