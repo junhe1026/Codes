@@ -5,9 +5,10 @@
   <head>
     <link href="files/css/fitnesse.css" rel="stylesheet" type="text/css" />
 
-    <title>Receipt for Purchases-with-TPOT-goods</title>
+    <title>3*1+3*1 </title>
   </head>
-<body><h1>Receipt for Purchases-with-TPOT-goods</h1><table border="0"
+<body><h1>3*1+3*1</h1>
+<table border="0"
       cellpadding="">
       <tr>
         <td colspan="3">Given the following products</td>
@@ -24,15 +25,24 @@
       <tr>
         <td>Milk</td>
 
-        <td>11111111</td>
+        <td>001</td>
 
         <td>0.50</td>
       </tr>
+	
+      <tr>
+        <td>Tea</td>
+
+        <td>002</td>
+
+        <td>1.50</td>
+      </tr>
+	
 
       <tr>
         <td>Cheese</td>
 
-        <td>22222222</td>
+        <td>100</td>
 
         <td>1.00</td>
       </tr>
@@ -40,7 +50,7 @@
       <tr>
         <td>Bread</td>
 
-        <td>33333333</td>
+        <td>200</td>
 
         <td>0.75</td>
       </tr>
@@ -48,25 +58,49 @@
       <tr>
         <td>Coke</td>
 
-        <td>44444444</td>
+        <td>010</td>
 
         <td>1.00</td>
       </tr>
 
       <tr>
-        <td>chocolate</td>
+        <td>Pepsi</td>
 
-        <td>55555555</td>
+        <td>020</td>
 
-        <td>2.00</td>
+        <td>1.00</td>
       </tr>
 
       <tr>
-        <td>Wine</td>
+        <td>Shampoo</td>
 
-        <td>66666666</td>
+        <td>011</td>
 
         <td>3.00</td>
+      </tr>
+
+	<tr>
+        <td>Conditioner</td>
+
+        <td>022</td>
+
+        <td>4.00</td>
+      </tr>
+
+	<tr>
+        <td>Shower Gel</td>
+
+        <td>111</td>
+
+        <td>3.00</td>
+      </tr>
+
+	<tr>
+        <td>Mask</td>
+
+        <td>222</td>
+
+        <td>2.00</td>
       </tr>
     </table>
 <table border="0"
@@ -87,6 +121,12 @@
 
         <td>1</td>
       </tr>
+      <tr>
+        <td>Tea</td>
+
+        <td>1</td>
+
+      </tr>
 
       <tr>
         <td>Cheese</td>
@@ -101,8 +141,49 @@
         <td>2</td>
 
       </tr>
+      
+      <tr>
+        <td>Coke</td>
+
+        <td>3</td>
 
       </tr>
+      
+      <tr>
+        <td>Pepsi</td>
+
+        <td>3</td>
+
+      </tr>
+      
+      <tr>
+        <td>Shampoo</td>
+
+        <td>4</td>
+
+      </tr>
+      
+      <tr>
+        <td>Conditioner</td>
+
+        <td>4</td>
+
+      </tr>
+      
+      <tr>
+        <td>Shower Gel</td>
+
+        <td>5</td>
+
+      </tr>
+      
+      <tr>
+        <td>Mask</td>
+
+        <td>6</td>
+
+      </tr>
+
     </table>
     <table border="0">
       <tr>
@@ -122,21 +203,27 @@
         <td>Milk</td>
       </tr>
 
-      <tr>
+	<tr>
         <td>Cheese</td>
       </tr>
 
-      <tr>
+	<tr>
         <td>Milk</td>
       </tr>
 
-      <tr>
-        <td>Bread</td>
+	<tr>
+        <td>Cheese</td>
       </tr>
-    
-      <tr>
-	<td>Wine</td>
+
+	<tr>
+        <td>Milk</td>
       </tr>
+
+	<tr>
+        <td>Cheese</td>
+      </tr>
+
+
     </table>
     
     <p>The receipt lists the product in the order that they were
@@ -155,27 +242,35 @@
 
       <tr class="receiptLine">
         <td>1</td>
-        <td>2 Milk @ 0.50 each = 1.00</td>
+        <td>3 Milk @ 0.50 each = 1.50</td>
+      </tr>
+	<tr class="receiptLine">
+	<td>2</td>
+        <td>3 Cheese @ 1.00 each = 3.00</td>
       </tr>
 
-      <tr class="receiptLine">
-        <td>2</td>
-        <td>1 Cheese @ 1.00 each = 1.00</td>
-      </tr>
-
-      <tr class="receiptLine">
+	<tr class="receiptLine">
         <td>3</td>
-        <td>1 Bread @ 0.75 each = 0.75</td>
+        <td>SubTotal = 4.50</td>
       </tr>
 
-      <tr class="receiptLine">
+	<tr class="receiptLine">
         <td>4</td>
-        <td>1 Wine @ 3.00 each = 3.00</td>
+        <td>Discount = -1.00</td>
+      </tr>
+
+	<tr class="receiptLine">
+        <td>5</td>
+        <td>--for milk 0.05</td>
+      </tr>
+<tr class="receiptLine">
+        <td>6</td>
+        <td>--for milk 0.05</td>
       </tr>
 
       <tr class="receiptLine">
-        <td>5</td>
-        <td>Total = 5.75</td>
+        <td>7</td>
+        <td>Total = 3.50</td>
       </tr>
     </table></body>
 </html>

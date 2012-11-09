@@ -5,9 +5,10 @@
   <head>
     <link href="files/css/fitnesse.css" rel="stylesheet" type="text/css" />
 
-    <title>Receipt for Purchases-with-TPOT-goods</title>
+    <title>TPOT 2 Products Bought 1 each </title>
   </head>
-<body><h1>Receipt for Purchases-with-TPOT-goods</h1><table border="0"
+<body><h1>Receipt for TPOT 2 Products Bought 1 each</h1>
+<table border="0"
       cellpadding="">
       <tr>
         <td colspan="3">Given the following products</td>
@@ -24,15 +25,24 @@
       <tr>
         <td>Milk</td>
 
-        <td>11111111</td>
+        <td>001</td>
 
         <td>0.50</td>
       </tr>
+	
+      <tr>
+        <td>Tea</td>
+
+        <td>002</td>
+
+        <td>1.50</td>
+      </tr>
+	
 
       <tr>
         <td>Cheese</td>
 
-        <td>22222222</td>
+        <td>100</td>
 
         <td>1.00</td>
       </tr>
@@ -40,7 +50,7 @@
       <tr>
         <td>Bread</td>
 
-        <td>33333333</td>
+        <td>200</td>
 
         <td>0.75</td>
       </tr>
@@ -48,25 +58,49 @@
       <tr>
         <td>Coke</td>
 
-        <td>44444444</td>
+        <td>010</td>
 
         <td>1.00</td>
       </tr>
 
       <tr>
-        <td>chocolate</td>
+        <td>Pepsi</td>
 
-        <td>55555555</td>
+        <td>020</td>
 
-        <td>2.00</td>
+        <td>1.00</td>
       </tr>
 
       <tr>
-        <td>Wine</td>
+        <td>Shampoo</td>
 
-        <td>66666666</td>
+        <td>011</td>
 
         <td>3.00</td>
+      </tr>
+
+	<tr>
+        <td>Conditioner</td>
+
+        <td>022</td>
+
+        <td>4.00</td>
+      </tr>
+
+	<tr>
+        <td>Shower Gel</td>
+
+        <td>111</td>
+
+        <td>3.00</td>
+      </tr>
+
+	<tr>
+        <td>Mask</td>
+
+        <td>222</td>
+
+        <td>2.00</td>
       </tr>
     </table>
 <table border="0"
