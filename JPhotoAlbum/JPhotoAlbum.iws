@@ -2,7 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c93d8721-085a-4660-8286-94522751bb54" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/com/drew/metadata/exif/ExifReader.class" afterPath="$PROJECT_DIR$/build/com/drew/metadata/exif/ExifReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/ExifModel.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/ExifModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhoto$ThumbLoader.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhoto$ThumbLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhoto.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhoto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoAction.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoAlbumLink.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoAlbumLink.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$FocusHandler.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$FocusHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$MouseListener.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$MouseListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$ResizeAdapter.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$ResizeAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$SelectDirectory.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$SelectDirectory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$SelectOK.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$SelectOK.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$closeAdapter.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser$closeAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoBrowser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection$1.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection$CopyThread.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection$CopyThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection$ExportPhotosThread.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection$ExportPhotosThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoCollection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoDirectory.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoDirectory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoExif.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoExif.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoExifDialog.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoExifDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$FocusHandler.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$FocusHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$MouseListener.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$MouseListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$MoveSelection.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$MoveSelection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$ResizeAdapter.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$ResizeAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$closeAdapter.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame$closeAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoList$1.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoList$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoList.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoMenu.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoPageInfo.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoPageInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoPanel.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoShow$ShowAction.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoShow$ShowAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoShow.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoShow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShow.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowFrame$1.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowFrame$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowFrame$ShowAction.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowFrame$ShowAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowFrame.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowMaker.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoSlideShowMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoStatus$1.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoStatus$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoStatus.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransferHandler.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransferHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransform$1.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransform$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransform$2.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransform$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransform.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/JPhotoTransform.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/MakeWorkQueue.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/MakeWorkQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/Preview.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/Preview.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/SlideShow.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/SlideShow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/SlideShowInterface.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/SlideShowInterface.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/UnsharpMaskFilter.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/UnsharpMaskFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/Utils$1.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/Utils$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/Utils$DirFilter.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/Utils$DirFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/Utils$PicFilter.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/Utils$PicFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fi/iki/jka/Utils.class" afterPath="$PROJECT_DIR$/build/fi/iki/jka/Utils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JPhotoAlbum.ipr" afterPath="$PROJECT_DIR$/JPhotoAlbum.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JPhotoAlbum.iws" afterPath="$PROJECT_DIR$/JPhotoAlbum.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Smartcard/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Smartcard/.idea/workspace.xml" />
     </list>
     <ignored path="JPhotoAlbum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,19 +133,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JPhotoFrame.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JPhotoFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="621" column="58" selection-start="26791" selection-end="26806" vertical-scroll-proportion="0.02166065">
+            <state line="1061" column="8" selection-start="41639" selection-end="41639" vertical-scroll-proportion="-17.307692">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Preview.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Preview.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/Preview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+            <state line="11" column="16" selection-start="210" selection-end="217" vertical-scroll-proportion="0.29100528">
               <folding />
             </state>
           </provider>
@@ -108,7 +163,7 @@
       <file leaf-file-name="SlideShowInterface.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/SlideShowInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+            <state line="11" column="17" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,6 +187,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -159,9 +217,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1680" />
-    <option name="height" value="1002" />
+    <option name="x" value="31" />
+    <option name="y" value="27" />
+    <option name="width" value="1280" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -212,6 +271,58 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPhotoAlbum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPhotoAlbum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPhotoAlbum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPhotoAlbum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPhotoAlbum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPhotoAlbum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPhotoAlbum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Default" />
         <subPane subId="Project Files">
@@ -233,22 +344,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JPhotoAlbum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -260,9 +361,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -272,7 +373,7 @@
       <recent name="fi.iki.jka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JPhotoFrameTest">
+  <component name="RunManager" selected="Application.JPhotoFrame">
     <configuration default="false" name="JPhotoFrame" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="fi.iki.jka.JPhotoFrame" />
       <option name="VM_PARAMETERS" />
@@ -461,27 +562,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1680" height="1002" extended-state="6" />
+    <frame x="31" y="27" width="1280" height="737" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31006494" sideWeight="0.9983471" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919955" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17892157" sideWeight="0.6719841" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6899351" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31116122" sideWeight="0.9983471" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -547,19 +648,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-1.6.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/ClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="0" selection-start="9599" selection-end="9599" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/UnsharpMaskFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="39" selection-start="897" selection-end="897" vertical-scroll-proportion="0.75547445" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.6.0-openjdk-amd64/jre/lib/javazic.jar!/build/tools/javazic/Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.08571429" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoPanel.java">
@@ -570,11 +661,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/drew/metadata/exif/ExifReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="489" column="31" selection-start="20952" selection-end="20952" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.6.0-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JOptionPane.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="-0.8066038" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoMenu.java">
@@ -592,19 +678,9 @@
         <state line="77" column="29" selection-start="2437" selection-end="2437" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/Preview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoShow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="15" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/SlideShowInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/SlideShow.java">
@@ -614,7 +690,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="621" column="58" selection-start="26791" selection-end="26806" vertical-scroll-proportion="0.02166065">
+        <state line="1061" column="8" selection-start="41639" selection-end="41639" vertical-scroll-proportion="-17.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/SlideShowInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/Preview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="210" selection-end="217" vertical-scroll-proportion="0.29100528">
           <folding />
         </state>
       </provider>
@@ -659,7 +749,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -676,6 +766,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
