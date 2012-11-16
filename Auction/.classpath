@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="acceptance-test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jmock/bsh-core-2.0b4.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/cglib-2.1_3-src.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/hamcrest-library-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/jmock-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/jmock-junit3-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/jmock-junit4-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/jmock-legacy-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/jmock-script-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jmock/objenesis-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.10-src.jar"/>
+	<classpathentry kind="lib" path="lib/junit-dep-4.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
