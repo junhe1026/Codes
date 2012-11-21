@@ -1,0 +1,66 @@
+package com.acmetelecom.test;
+
+import static org.junit.Assert.assertEquals;
+
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
+import com.acmetelecom.platform.HtmlPrinter;
+import com.acmetelecom.platform.Printer;
+import org.junit.Test;
+
+public class HtmlPrinterTest {
+	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	private final ByteArrayOutputStream expectedContent = new ByteArrayOutputStream();
+
+	@Test
+	public void testPrintHeading() throws FileNotFoundException {
+		Printer printer = new HtmlPrinter(new PrintStream(this.outContent));
+
+		String name = "Yu Liu";
+		String phoneNumber = "07427476882";
+		String pricePlan = "Save Money.";
+		
+		printer.printHeading(name, phoneNumber, pricePlan);
+		
+		PrintStream psExpected = new PrintStream(expectedContent);
+		psExpected.println("<html>");
+		psExpected.println("<head></head>");
+		psExpected.println("<body>");
+		psExpected.println("<h1>");
+		psExpected.println("Acme Telecom");
+		psExpected.println("</h1>");
+		psExpected.println("<h2>Yu Liu/07427476882 - Price Plan: Save Money.</h2>");
+		psExpected.println("<table border=\"1\">");
+		psExpected.println("<tr>" + "<th width=\"160\">" + "Time" + "</th>" + "<th width=\"160\">" + "Number" + "</th>" + "<th width=\"160\">" + "Duration" + "</th>" + "<th width=\"160\">" + "Cost" + "</th>" + "</tr>");
+	    assertEquals(expectedContent.toString(), outContent.toString());
+	}
+
+	@Test
+	public void testPrintItem() {
+		Printer printer =new HtmlPrinter(new PrintStream(this.outContent));
+		String duration = "30";
+		String time = "10000";
+		String callee = "Zhicong Liu";
+		String cost = "30";
+		printer.printItem(time, callee, duration, cost);
+		PrintStream psExpected = new PrintStream(expectedContent);
+		psExpected.println("<tr>" + "<td>" + "10000" + "</td>"  + "<td>" + "Zhicong Liu" + "</td>"  + "<td>" + "30" + "</td>"  + "<td>" + "30" + "</td>" + "</tr>");
+	    assertEquals(expectedContent.toString(), outContent.toString());
+	}
+
+	@Test
+	public void testPrintTotal() {
+		Printer printer =new HtmlPrinter(new PrintStream(this.outContent));
+		String total = "300";
+		printer.printTotal(total);
+		PrintStream psExpected = new PrintStream(expectedContent);
+		psExpected.println("</table>");
+		psExpected.println("<h2>" + "Total: " + "300" + "</h2>");
+		psExpected.println("</body>");
+		psExpected.println("</html>");
+	    assertEquals(expectedContent.toString(), outContent.toString());
+	}
+
+}

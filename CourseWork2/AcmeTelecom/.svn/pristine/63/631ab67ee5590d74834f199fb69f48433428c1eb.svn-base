@@ -1,0 +1,26 @@
+package com.acmetelecom.test;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+import java.math.BigDecimal;
+import com.acmetelecom.rates.RateDescriptor;
+
+public class RateDescriptorTest {
+	@Test
+	public void testGetRate() {
+		BigDecimal rate = new BigDecimal(10.0);
+		int seconds = 60;
+		
+		RateDescriptor descriptor = new RateDescriptor(rate, seconds);
+		assertEquals(descriptor.getRate(), rate);
+	}
+
+	@Test
+	public void testGetSeconds() {
+		BigDecimal rate = new BigDecimal(10.0);
+		int seconds = 60;
+		
+		RateDescriptor descriptor = new RateDescriptor(rate, seconds);
+		assertEquals(descriptor.getSeconds(), seconds);
+	}
+}

@@ -1,0 +1,31 @@
+package com.acmetelecom.fakes;
+
+import com.acmetelecom.customer.CustomerDatabase;
+import com.acmetelecom.customer.Customer;
+
+import java.util.ArrayList;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Alexander
+ * Date: 29/11/2011
+ * Time: 7:32 πμ
+ * To change this template use File | Settings | File Templates.
+ */
+public class FakeCustomerDatabase implements CustomerDatabase{
+    private ArrayList<Customer> customers;
+
+    public FakeCustomerDatabase()
+    {
+        customers = new ArrayList<Customer>();
+    }
+     public java.util.List<com.acmetelecom.customer.Customer> getCustomers()
+     {
+       return customers;
+     }
+
+    public void addCustomer(Customer newCustomer)
+    {
+        customers.add(newCustomer);
+    }
+}

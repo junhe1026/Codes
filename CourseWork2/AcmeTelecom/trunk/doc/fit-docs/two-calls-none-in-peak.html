@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link href="files/css/fitnesse.css" rel="stylesheet" type="text/css" />
+
+    <title>Two calls both offpeak</title>
+  </head>
+
+  <body><h1>Two calls both offpeak</h1>
+  
+  <table border="0"
+      cellpadding=""> <tr> <td> Given the system is initialized </td> </tr> </table>
+  
+  <table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="3">Given the following tariff plans</td>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+
+        <td>Off-peak Charge per 10 seconds in pence</td>
+		
+		<td>On-peak Charge per 10 seconds in pence</td>
+      </tr>
+
+      <tr>
+        <td>Business</td>
+
+        <td>3</td>
+		<td>5</td>
+      </tr>
+
+      <tr>
+        <td>Leisure</td>
+
+        <td>10</td>
+		<td>20</td>
+      </tr>
+
+      <tr>
+        <td>Standard</td>
+
+        <td>7</td>
+		<td>10</td>
+
+      </tr>
+	  
+    </table>
+  
+  <table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="3">Given the following customers</td>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+
+        <td>Phone Number</td>
+
+        <td>Tariff Plan</td>
+      </tr>
+
+      <tr>
+        <td>Alice</td>
+
+        <td>447711111111</td>
+
+        <td>Leisure</td>
+      </tr>
+
+      <tr>
+        <td>Bob</td>
+
+        <td>447722222222</td>
+
+        <td>Business</td>
+      </tr>
+
+      <tr>
+        <td>Carol</td>
+
+        <td>447733333333</td>
+
+        <td>Business</td>
+      </tr>
+	  
+	  <tr>
+        <td>Diana</td>
+
+        <td>447744444444</td>
+
+        <td>Standard</td>
+      </tr>
+    </table>
+	
+	<table border="0">
+      <tr>
+        <td colspan="2">Given Peak Period  </td>
+      </tr>
+	  <tr>
+        <td>Start </td>
+		<td>End </td>
+      </tr>
+	  <tr>
+        <td>07:00 </td>
+		<td>19:00 </td>
+      </tr>
+    </table>
+	
+	<table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="4">Given these calls are made</td>
+      </tr>
+	  
+	  <tr>
+        <td>Start time</td>
+
+        <td>From</td>
+
+        <td>To</td>
+		
+		<td>Duration</td>
+      </tr>
+	  
+	  
+	  <tr>
+        <td>19:00</td>
+
+        <td>447733333333</td>
+
+        <td>447744444444</td>
+		
+		<td>1200</td>
+      </tr>
+	  
+	  <tr>
+        <td>06:50</td>
+
+        <td>447711111111</td>
+
+        <td>447722222222</td>
+		
+		<td>600</td>
+      </tr>
+	  
+    </table>
+    
+    <p>The calls are charged based on the percentage in/out of peak time and based on the tariff plan.</p>
+  
+  <table bgcolor="" border="0">
+      <tr>
+        <td colspan="2">The Bill Shows</td>
+      </tr>
+	   <tr>
+		<td>LineNum</td>
+	    <td>Text</td>
+	  </tr>
+      
+      <tr>
+	  <td>1</td>
+		<td>
+        Alice/447711111111 - Leisure
+		</td>
+      </tr>
+	  <tr>
+	  <td>2</td>
+		<td>
+		06:50	447722222222	10:00	6,00
+		</td>
+	  </tr>
+	  <tr>
+	  <td>3</td>
+		<td>
+		Total:	6,00
+		</td>
+	  </tr>
+	  
+	  <tr>
+	  <td>4</td>
+		<td>
+        Bob/447722222222 - Business
+		</td>
+	  </tr>
+	  <tr>
+	  <td>5</td>
+		<td>
+		Total:	0,00
+		</td>
+      </tr>
+	  
+	  <tr>
+	  <td>6</td>
+		<td>
+        Carol/447733333333 - Business
+		</td>
+	</tr>
+	<tr>
+	<td>7</td>
+		<td>
+		19:00	447744444444	20:00	3,60
+		</td>
+	</tr>
+	<tr>
+	<td>8</td>
+		<td>
+		Total:	3,60
+		</td>
+      </tr>
+	  
+	  <tr>
+	  <td>9</td>
+	  <td>
+        Diana/447744444444 - Standard
+		</td>
+		</tr>
+	<tr>
+	<td>10</td>
+	<td>
+		Total:	0,00
+		</td>
+		</tr>
+      </tr>
+ 
+    </table></body>
+</html>

@@ -1,0 +1,64 @@
+package com.acmetelecom.test;
+
+import static org.junit.Assert.*;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.jmock.Expectations;
+import org.jmock.Mockery;
+import org.jmock.integration.junit4.JUnitRuleMockery;
+import org.junit.Rule;
+import org.junit.Test;
+
+import com.acmetelecom.BillGenerator;
+import com.acmetelecom.BillingSystem;
+import com.acmetelecom.Printer;
+import com.acmetelecom.ConfigurableBillingSystem;
+import com.acmetelecom.customer.CustomerDatabase;
+import com.acmetelecom.customer.Tariff;
+import com.acmetelecom.customer.TariffLibrary;
+import com.acmetelecom.customer.Customer;
+
+public class TestConfigurableBillingSystem {
+	@Rule
+	public final JUnitRuleMockery context = new JUnitRuleMockery();
+
+	@Test
+	public void testCreateCustomerBillsWithSingleCallAndTwoCustomers() throws InterruptedException {
+    	final CustomerDatabase customerDatabase = context.mock(CustomerDatabase.class);
+    	final TariffLibrary tariffLibrary = context.mock(TariffLibrary.class);
+    	final Printer printer = context.mock(Printer.class);
+    	
+    	ConfigurableBillingSystem bs = new ConfigurableBillingSystem(customerDatabase, tariffLibrary, new BillGenerator(printer));
+    	
+    	final Customer c1 = new Customer("John Smith", "447766406373", null);
+    	final Customer c2 = new Customer("Sarah Jones", "4479204334499", null);
+    	final List<Customer> customers = new LinkedList<Customer>();
+    	customers.add(c1);
+    	customers.add(c2);
+    	
+    	// We can test the protocol between the billing system and some of 
+    	// its collaborators, but not all of them.
+    	context.checking(new Expectations() {{
+    		allowing(customerDatabase).getCustomers(); will(returnValue(customers));
+    		oneOf(tariffLibrary).tarriffFor(c1); will(returnValue(Tariff.Business));
+    	}});
+    	
+    	// Even though we're now able to inject mock implementations for the 
+    	// customer and tariff databases, there are still a few problems:
+    	// test results depend on the time of the day when the test is run,
+    	// there is no way to sense the outputs of the billing system as it
+    	// produces HTML directly to the standard output, if we want to test
+    	// a call lasting for one hour, that is how long it will take for the 
+    	// full test to run.
+    	bs.callInitiated(c1.getPhoneNumber(), c2.getPhoneNumber());
+    	sleepSeconds(10);
+    	bs.callCompleted(c1.getPhoneNumber(), c2.getPhoneNumber());
+    	bs.createCustomerBills();
+	}
+
+	private static void sleepSeconds(int n) throws InterruptedException {
+		Thread.sleep(n * 1000);
+	}
+}

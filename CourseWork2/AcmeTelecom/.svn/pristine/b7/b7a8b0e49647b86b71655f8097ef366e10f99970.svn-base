@@ -1,0 +1,131 @@
+package com.acmetelecom.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import java.math.BigDecimal;
+import com.acmetelecom.rates.RateDescriptor;
+
+/**
+ * Simple tests for rate descriptors 
+ */
+public class RateDescriptorTest {
+	@Test
+	public void testGetRate() {
+		BigDecimal rate = new BigDecimal(10.0);
+		int seconds = 60;
+		
+		RateDescriptor descriptor = new RateDescriptor(rate, seconds);
+		assertEquals(descriptor.getRate(), rate);
+	}
+
+	@Test
+	public void testGetSeconds() {
+		BigDecimal rate = new BigDecimal(10.0);
+		int seconds = 60;
+		
+		RateDescriptor descriptor = new RateDescriptor(rate, seconds);
+		assertEquals(descriptor.getSeconds(), seconds);
+	}
+
+    @Test
+    public void testHashCode() {
+        BigDecimal rate1 = new BigDecimal(10.0);
+        BigDecimal rate2 = new BigDecimal(15.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate1,seconds);
+        RateDescriptor rateDescriptor2 = new RateDescriptor(rate2,seconds);
+        assertFalse(rateDescriptor1.hashCode()==rateDescriptor2.hashCode());
+    }
+
+    @Test
+    public void testHashCodeWithNullRate() {
+        BigDecimal rate = null;
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate,seconds);
+        RateDescriptor rateDescriptor2 = new RateDescriptor(rate,seconds);
+        assertTrue(rateDescriptor1.hashCode()==rateDescriptor2.hashCode());
+    }
+
+    @Test
+    public void testEquals() {
+        BigDecimal rate1 = new BigDecimal(10.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate1,seconds);
+        RateDescriptor rateDescriptor2 = new RateDescriptor(rate1,seconds);
+        assertTrue(rateDescriptor1.equals(rateDescriptor2));
+    }
+
+    @Test
+    public void testEqualsWithDifferentRates() {
+        BigDecimal rate1 = new BigDecimal(10.0);
+        BigDecimal rate2 = new BigDecimal(15.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate1,seconds);
+        RateDescriptor rateDescriptor2 = new RateDescriptor(rate2,seconds);
+        assertFalse(rateDescriptor1.equals(rateDescriptor2));
+    }
+
+    @Test
+    public void testEqualsWithDifferentSeconds() {
+        BigDecimal rate = new BigDecimal(10.0);
+        int seconds1 = 60;
+        int seconds2 = 120;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate,seconds1);
+        RateDescriptor rateDescriptor2 = new RateDescriptor(rate,seconds2);
+        assertFalse(rateDescriptor1.equals(rateDescriptor2));
+    }
+
+    @Test
+    public void testEqualsWithOneRateNull () {
+        BigDecimal rate = new BigDecimal(10.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(null,seconds);
+        RateDescriptor rateDescriptor2 = new RateDescriptor(rate,seconds);
+        assertFalse(rateDescriptor1.equals(rateDescriptor2));
+    }
+
+    @Test
+    public void testEqualsWithBothRatesNull () {
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(null,seconds);
+        RateDescriptor rateDescriptor2 = new RateDescriptor(null,seconds);
+        assertTrue(rateDescriptor1.equals(rateDescriptor2));
+    }
+
+    @Test
+    public void testEqualsWithSameObject() {
+        BigDecimal rate = new BigDecimal(10.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate,seconds);
+        assertTrue(rateDescriptor1.equals(rateDescriptor1));
+    }
+
+    @Test
+    public void testEqualsWithNull() {
+        BigDecimal rate = new BigDecimal(10.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate,seconds);
+        RateDescriptor rateDescriptor2 = null;
+        assertFalse(rateDescriptor1.equals(rateDescriptor2));
+    }
+
+    @Test
+    public void testEqualsWithDifferentClass() {
+        BigDecimal rate = new BigDecimal(10.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor1 = new RateDescriptor(rate,seconds);
+        assertFalse(rateDescriptor1.equals(rate));
+    }
+
+    @Test
+    public void testToString() {
+        BigDecimal rate = new BigDecimal(10.0);
+        int seconds = 60;
+        RateDescriptor rateDescriptor = new RateDescriptor(rate,seconds);
+        String expected = "seconds=" + seconds + " rate=" + rate.toString();
+        assertEquals(rateDescriptor.toString(),expected);
+    }
+}

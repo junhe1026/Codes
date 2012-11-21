@@ -1,0 +1,25 @@
+import fit.RowFixture;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Alexander
+ * Date: 30/11/2011
+ * Time: 5:23 μμ
+ * To change this template use File | Settings | File Templates.
+ */
+public class TheBillShows extends RowFixture
+{
+
+	@Override
+	public Class<?> getTargetClass() {
+		return String.class;
+	}
+
+	@Override
+	public Object[] query() throws Exception {
+		SystemUnderTest.bs.createCustomerBills();
+
+		return SystemUnderTest.os.toString().split("\n");
+	}
+}
+

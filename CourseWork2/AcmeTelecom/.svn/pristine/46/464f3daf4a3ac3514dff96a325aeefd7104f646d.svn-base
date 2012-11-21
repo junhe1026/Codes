@@ -1,0 +1,145 @@
+package com.acmetelecom.test;
+
+import static com.acmetelecom.builders.CallBuilder.aCall;
+import static com.acmetelecom.builders.CustomerBuilder.aCustomer;
+import static com.acmetelecom.builders.LineItemBuilder.aLineItem;
+import static org.hamcrest.Matchers.anyOf;
+import static org.hamcrest.Matchers.equalTo;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.jmock.Expectations;
+import org.jmock.integration.junit4.JUnitRuleMockery;
+import org.junit.Rule;
+import org.junit.Test;
+
+import com.acmetelecom.BillGenerator;
+import com.acmetelecom.Generator;
+import com.acmetelecom.LineItem;
+import com.acmetelecom.MoneyFormatter;
+import com.acmetelecom.customer.Customer;
+import com.acmetelecom.platform.Printer;
+
+import static com.acmetelecom.builders.Second.Seconds;
+
+public class BillGeneratorTest {
+	@Rule
+	public final JUnitRuleMockery context = new JUnitRuleMockery();
+
+	public BillGeneratorTest() {}
+	
+	@Test
+	public void testCustomerWithOneCall() {
+		final Printer printer = context.mock(Printer.class);
+		
+		// Create customers for the test
+		final Customer c1 = aCustomer().
+						named("John").
+						withPhoneNumber("447766406373").build();
+		
+		final Customer c2 = aCustomer().
+						named("Susan").
+						withPhoneNumber("447920434499").build();
+		
+		// Create line items for the actual customer build
+		List<LineItem> lineItems = new ArrayList<LineItem>();
+		final LineItem lineItem = aLineItem().forCall(
+									aCall().
+									from(c1).
+									to(c2).
+									startingNow().
+									lastingFor(Seconds(10)).build()).
+									withACostOf(new BigDecimal(10.0)).build();
+		lineItems.add(lineItem);
+		final String totalBill = "someTotal";
+		
+		// Set expectations for the test
+		Generator generator = new BillGenerator(printer);
+    	context.checking(new Expectations() {{
+    		oneOf(printer).printHeading(c1.getFullName(), c1.getPhoneNumber(), c1.getPricePlan());
+    		oneOf(printer).printItem(lineItem.date(),lineItem.callee(), lineItem.durationMinutes(), MoneyFormatter.penceToPounds(lineItem.cost()));
+    		oneOf(printer).printTotal(totalBill);
+    	}});		
+		
+		generator.send(c1, lineItems, "someTotal");
+	}
+
+	@Test
+	public void testCustomerWithNoCalls() {
+		final Printer printer = context.mock(Printer.class);
+		
+		// Create customers for the test
+		final Customer c1 = aCustomer().
+						named("John").
+						withPhoneNumber("447766406373").build();
+				
+		// Create line items for the actual customer build
+		List<LineItem> lineItems = new ArrayList<LineItem>();
+		final String totalBill = "someTotal";
+		
+		Generator generator = new BillGenerator(printer);
+    	context.checking(new Expectations() {{
+    		oneOf(printer).printHeading(c1.getFullName(), c1.getPhoneNumber(), c1.getPricePlan());
+    		oneOf(printer).printTotal(totalBill);
+    	}});		
+		
+		generator.send(c1, lineItems, "someTotal");
+	}
+
+	@Test
+	public void testCustomerWithTwoCalls() {
+		final Printer printer = context.mock(Printer.class);
+		
+		// Create customers for the test
+		final Customer c1 = aCustomer().
+						named("John").
+						withPhoneNumber("447766406373").build();
+		
+		final Customer c2 = aCustomer().
+						named("Susan").
+						withPhoneNumber("447920434499").build();
+		
+		// Create line items for the actual customer build
+		List<LineItem> lineItems = new ArrayList<LineItem>();
+		final LineItem lineItem1 = aLineItem().forCall(
+									aCall().
+									from(c1).
+									to(c2).
+									startingNow().
+									lastingFor(Seconds(10)).build()).
+									withACostOf(new BigDecimal(10.0)).build();
+
+		final LineItem lineItem2 = aLineItem().forCall(
+									aCall().
+									from(c1).
+									to(c2).
+									startingNow().
+									lastingFor(Seconds(20)).build()).
+									withACostOf(new BigDecimal(10.0)).build();
+
+		lineItems.add(lineItem1);
+		lineItems.add(lineItem2);
+		final String totalBill = "someTotal";
+		
+		// In this test we want to make sure that the printer is called 
+		// as many times as necessary and for the appropriate line items. 
+		Generator generator = new BillGenerator(printer);
+    	context.checking(new Expectations() {{
+    		oneOf(printer).printHeading(c1.getFullName(), c1.getPhoneNumber(), c1.getPricePlan());
+    		atLeast(2).of(printer).printItem(
+    				with(anyOf(	equalTo(lineItem1.date()), 
+    							equalTo(lineItem2.date()))),
+    				with(anyOf(	equalTo(lineItem1.callee()), 
+    							equalTo(lineItem2.callee()))), 
+    				with(anyOf(	equalTo(lineItem1.durationMinutes()), 
+    							equalTo(lineItem2.durationMinutes()))), 
+    				with(anyOf(	equalTo(MoneyFormatter.penceToPounds(lineItem1.cost())),
+    							equalTo(MoneyFormatter.penceToPounds(lineItem1.cost())))));
+    		oneOf(printer).printTotal(totalBill);
+    	}});		
+		
+		generator.send(c1, lineItems, "someTotal");
+	}
+}

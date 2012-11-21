@@ -1,0 +1,32 @@
+package com.acmetelecom.test;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+import com.acmetelecom.BillingSystem;
+import junit.framework.TestCase;
+
+public class TestConfigurableBillingSystem {
+	@Test
+	public void testCreateCustomerBills() throws InterruptedException {
+		// Create the object under test. Now we can inject our own
+		// mock or stub implementations of the customer and tariff databases
+        System.out.println("Running...");
+        BillingSystem billingSystem = new BillingSystem();
+        billingSystem.callInitiated("447722113434", "447766814143");
+        sleepSeconds(20);
+        billingSystem.callCompleted("447722113434", "447766814143");
+        billingSystem.callInitiated("447722113434", "447711111111");
+        sleepSeconds(30);
+        billingSystem.callCompleted("447722113434", "447711111111");
+        billingSystem.callInitiated("447777765432", "447711111111");
+        sleepSeconds(60);
+        billingSystem.callCompleted("447777765432", "447711111111");
+        billingSystem.createCustomerBills();
+        
+		assertTrue(true);
+	}
+	
+    private static void sleepSeconds(int n) throws InterruptedException {
+        Thread.sleep(n * 1000);
+    }
+}

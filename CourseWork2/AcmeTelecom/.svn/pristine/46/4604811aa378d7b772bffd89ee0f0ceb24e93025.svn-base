@@ -1,0 +1,73 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: All Tests</title>
+<link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/0_BillGeneratorTest.html">BillGeneratorTest</a></td><td><a name="testCustomerWithOneCall"></a><a href="com/acmetelecom/test/0_BillGeneratorTest.html#testCustomerWithOneCall">testCustomerWithOneCall</a></td><td>Success</td><td></td><td>0.145</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/0_BillGeneratorTest.html">BillGeneratorTest</a></td><td><a name="testCustomerWithNoCalls"></a><a href="com/acmetelecom/test/0_BillGeneratorTest.html#testCustomerWithNoCalls">testCustomerWithNoCalls</a></td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/0_BillGeneratorTest.html">BillGeneratorTest</a></td><td><a name="testCustomerWithTwoCalls"></a><a href="com/acmetelecom/test/0_BillGeneratorTest.html#testCustomerWithTwoCalls">testCustomerWithTwoCalls</a></td><td>Success</td><td></td><td>0.027</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/1_BillingSystemTest.html">BillingSystemTest</a></td><td><a name="testCreateCustomerBills"></a><a href="com/acmetelecom/test/1_BillingSystemTest.html#testCreateCustomerBills">testCreateCustomerBills</a></td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/2_ConfigurableBillingSystemTest.html">ConfigurableBillingSystemTest</a></td><td><a name="testCreateCustomerBillWithNoCalls"></a><a href="com/acmetelecom/test/2_ConfigurableBillingSystemTest.html#testCreateCustomerBillWithNoCalls">testCreateCustomerBillWithNoCalls</a></td><td>Success</td><td></td><td>0.034</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/2_ConfigurableBillingSystemTest.html">ConfigurableBillingSystemTest</a></td><td><a name="testCreateCustomerBillsWithSingleCallAndTwoCustomers"></a><a href="com/acmetelecom/test/2_ConfigurableBillingSystemTest.html#testCreateCustomerBillsWithSingleCallAndTwoCustomers">testCreateCustomerBillsWithSingleCallAndTwoCustomers</a></td><td>Success</td><td></td><td>0.014</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/2_ConfigurableBillingSystemTest.html">ConfigurableBillingSystemTest</a></td><td><a name="testCreateCustomerBillsWithTwoCallsAndTwoCustomers"></a><a href="com/acmetelecom/test/2_ConfigurableBillingSystemTest.html#testCreateCustomerBillsWithTwoCallsAndTwoCustomers">testCreateCustomerBillsWithTwoCallsAndTwoCustomers</a></td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/3_FakeCustomerDataBaseTest.html">FakeCustomerDataBaseTest</a></td><td><a name="testFakeDatabase"></a><a href="com/acmetelecom/test/3_FakeCustomerDataBaseTest.html#testFakeDatabase">testFakeDatabase</a></td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/4_FakeTariffLibraryTest.html">FakeTariffLibraryTest</a></td><td><a name="testTariffLibraryGetsCustomerTariff"></a><a href="com/acmetelecom/test/4_FakeTariffLibraryTest.html#testTariffLibraryGetsCustomerTariff">testTariffLibraryGetsCustomerTariff</a></td><td>Success</td><td></td><td>0.295</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html">OffpeakRateSelectorTest</a></td><td><a name="testNormalOffpeakHoursRatesAreReturned"></a><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html#testNormalOffpeakHoursRatesAreReturned">testNormalOffpeakHoursRatesAreReturned</a></td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html">OffpeakRateSelectorTest</a></td><td><a name="testNormalOffpeakHoursValidDuration"></a><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html#testNormalOffpeakHoursValidDuration">testNormalOffpeakHoursValidDuration</a></td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html">OffpeakRateSelectorTest</a></td><td><a name="testNormalOffpeakHoursWithFullOnpeakCall"></a><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html#testNormalOffpeakHoursWithFullOnpeakCall">testNormalOffpeakHoursWithFullOnpeakCall</a></td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html">OffpeakRateSelectorTest</a></td><td><a name="testNormalOffpeakHoursWithFullOffpeakCall"></a><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html#testNormalOffpeakHoursWithFullOffpeakCall">testNormalOffpeakHoursWithFullOffpeakCall</a></td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html">OffpeakRateSelectorTest</a></td><td><a name="testNormalOffpeakHoursWithOverlappingCallAtStart"></a><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html#testNormalOffpeakHoursWithOverlappingCallAtStart">testNormalOffpeakHoursWithOverlappingCallAtStart</a></td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html">OffpeakRateSelectorTest</a></td><td><a name="testNormalOffpeakHoursWithOverlappingCallAtEnd"></a><a href="com/acmetelecom/test/5_OffpeakRateSelectorTest.html#testNormalOffpeakHoursWithOverlappingCallAtEnd">testNormalOffpeakHoursWithOverlappingCallAtEnd</a></td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/6_RateDescriptorTest.html">RateDescriptorTest</a></td><td><a name="testGetRate"></a><a href="com/acmetelecom/test/6_RateDescriptorTest.html#testGetRate">testGetRate</a></td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/acmetelecom/test/6_RateDescriptorTest.html">RateDescriptorTest</a></td><td><a name="testGetSeconds"></a><a href="com/acmetelecom/test/6_RateDescriptorTest.html#testGetSeconds">testGetSeconds</a></td><td>Success</td><td></td><td>0.001</td>
+</tr>
+</table>
+</body>
+</html>

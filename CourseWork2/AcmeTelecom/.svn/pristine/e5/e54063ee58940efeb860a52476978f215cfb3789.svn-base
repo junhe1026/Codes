@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local-project language="java" version="3.5.1491" flavor="j2se">
+  <property name="hide-externals" value="true" />
+  <property name="show-needs-to-compile" value="false" />
+  <property name="detail-mode" value="false" />
+  <property name="project-type" value="classpath" />
+  <classpath>
+    <classpathentry kind="lib" path="/Users/antonio/Documents/svn-AcmeWkC/AcmeTelecom/trunk/out/production" />
+  </classpath>
+  <restructuring>
+    <set version="1" name="Sandbox 1" hiview="Codemap" active="true" todo="false" />
+    <set version="1" name="Flattened to classes" hiview="Codemap" active="false" todo="false">
+      <action type="flatten" active="true" description="Flatten root">
+        <params flattenLeafFolders="true">
+          <container-fqn fqn="root" type="root" path="" isroot="true" />
+        </params>
+        <composite-set />
+      </action>
+    </set>
+    <set version="1" name="Flattened to leaf packages" hiview="Codemap" active="false" todo="false">
+      <action type="flatten" active="true" description="Flatten root">
+        <params flattenLeafFolders="false">
+          <container-fqn fqn="root" type="root" path="" isroot="true" />
+        </params>
+        <composite-set />
+      </action>
+    </set>
+  </restructuring>
+  <sourcepaths>
+    <pathentry type="file" path="/Users/antonio/Documents/svn-AcmeWkC/AcmeTelecom/trunk/src" />
+  </sourcepaths>
+  <grid-set sep="." version="3.5.1491">
+    <grid name="Diagram 1" enforce="true" strict="false">
+      <row>
+        <cell name="builders" pattern="com.acmetelecom.builders.?" vexpanded="false" visibility="public" />
+      </row>
+      <row>
+        <cell name="acmetelecom" pattern="com.acmetelecom.?" vexpanded="false" visibility="public" />
+      </row>
+      <row>
+        <cell name="platform" pattern="com.acmetelecom.platform.?" vexpanded="false" visibility="public" />
+        <cell name="rates" pattern="com.acmetelecom.rates.?" vexpanded="false" visibility="public" />
+      </row>
+      <description>Top-level breakout</description>
+    </grid>
+  </grid-set>
+</local-project>
+

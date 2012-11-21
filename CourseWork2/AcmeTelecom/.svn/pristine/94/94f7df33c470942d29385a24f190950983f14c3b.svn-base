@@ -1,0 +1,24 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FITTests" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="fitlibrary.runner.FolderRunner" />
+    <option name="VM_PARAMETERS" value="-javaagent:&quot;lib/jmock/jdave-unfinalizer-1.1.jar&quot;" />
+    <option name="PROGRAM_PARAMETERS" value="doc/fit-docs/  doc/fit-reports" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.6.0_22" />
+    <option name="ENABLE_SWING_INSPECTOR" value="false" />
+    <option name="ENV_VARIABLES" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <module name="AcmeTelecom" />
+    <envs />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="54460" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Debug" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method />
+  </configuration>
+</component>

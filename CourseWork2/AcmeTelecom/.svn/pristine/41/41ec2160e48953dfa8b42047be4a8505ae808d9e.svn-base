@@ -1,0 +1,70 @@
+package com.acmetelecom.builders;
+
+import java.util.Date;
+
+import com.acmetelecom.Call;
+import com.acmetelecom.CallEvent;
+
+public class CallBuilder implements Builder {
+	private String caller;
+	private String callee;
+	private CallEvent start;
+	private CallEvent end;
+	private int duration;
+	
+	public static CallBuilder aCall() {
+		return new CallBuilder();
+	}
+	
+	private CallBuilder() {
+		this.callee = "";
+		this.caller = "";
+		
+		this.start = null;
+		this.end = null;
+	}
+	
+	public CallBuilder from(String caller) {
+		this.caller = caller;
+		return this;
+	}
+	
+	public CallBuilder to(String callee) {
+		this.callee = callee;
+		return this;
+	}
+
+	public CallBuilder startingNow() {
+		this.start = new CallEvent(this.caller, this.callee, System.currentTimeMillis());
+		return this;
+	}
+
+	public CallBuilder endingNow() {
+		this.end = new CallEvent(this.caller, this.callee, System.currentTimeMillis());
+		return this;
+	}
+	
+	public CallBuilder startingAt(Date date) {
+		this.start = new CallEvent(this.caller, this.callee, date.getTime());
+		return this;
+	}
+
+	public CallBuilder endingAt(Date date) {
+		this.end = new CallEvent(this.caller, this.callee, date.getTime());
+		return this;
+	}
+
+	public CallBuilder lastingFor(int duration) {
+		// For the time being, this is just seconds. We will eventually use value types
+		this.duration = duration * 1000;
+
+		this.end = new CallEvent(this.caller, this.callee, this.start.time() + this.duration);
+		return this;
+	}
+	
+	@Override
+	public Call build() {
+		return new Call(this.start, this.end);
+	}
+
+}

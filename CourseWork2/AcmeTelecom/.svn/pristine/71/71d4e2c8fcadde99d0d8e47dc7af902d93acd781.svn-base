@@ -1,0 +1,21 @@
+package com.acmetelecom.test;
+
+import static org.junit.Assert.assertEquals;
+
+import com.acmetelecom.platform.Clock;
+import com.acmetelecom.platform.SystemClock;
+import org.junit.Test;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: antonio
+ * Date: 04/12/2011
+ * Time: 13:29
+ */
+public class SystemClockTest {
+    @Test
+    public void testCurrentTimeMillis() throws Exception {
+        Clock clock = new SystemClock();
+        assertEquals(System.currentTimeMillis(),clock.currentTimeMillis());
+    }
+}

@@ -1,0 +1,30 @@
+package com.acmetelecom;
+
+import com.acmetelecom.customer.CentralCustomerDatabase;
+import com.acmetelecom.customer.CentralTariffDatabase;
+import com.acmetelecom.customer.CustomerDatabase;
+
+public class BillingSystem implements Biller {
+	private ConfigurableBillingSystem billingSystem = null;
+	
+	public BillingSystem() {
+		this.billingSystem = new ConfigurableBillingSystem(
+				CentralCustomerDatabase.getInstance(),
+				CentralTariffDatabase.getInstance());
+	} 
+	
+	@Override
+	public void callCompleted(String caller, String callee) {
+		this.billingSystem.callCompleted(caller, callee);
+	}
+
+	@Override
+	public void callInitiated(String caller, String callee) {
+		this.billingSystem.callInitiated(caller, callee);
+	}
+
+	@Override
+	public void createCustomerBills() {
+		this.billingSystem.createCustomerBills();
+	}
+}

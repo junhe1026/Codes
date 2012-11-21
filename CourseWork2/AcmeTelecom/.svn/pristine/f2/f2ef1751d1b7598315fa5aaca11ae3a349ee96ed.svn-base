@@ -1,0 +1,64 @@
+package com.acmetelecom.test;
+
+import static org.junit.Assert.*;
+
+import org.jmock.integration.junit4.JUnitRuleMockery;
+import org.junit.Rule;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.acmetelecom.BillGenerator;
+import com.acmetelecom.ConfigurableBillingSystem;
+import com.acmetelecom.LineItem;
+import com.acmetelecom.Printer;
+import com.acmetelecom.builders.CustomerBuilder;
+import com.acmetelecom.builders.LineItemBuilder;
+import com.acmetelecom.customer.Customer;
+
+import static com.acmetelecom.builders.CustomerBuilder.aCustomer;
+import static com.acmetelecom.builders.LineItemBuilder.aLineItem;
+import static com.acmetelecom.builders.CallBuilder.aCall;;
+
+public class TestBillGenerator {
+	@Rule
+	public final JUnitRuleMockery context = new JUnitRuleMockery();
+
+	@Test
+	public void testCustomerWithOneCall() {
+//		final Printer printer = context.mock(Printer.class);
+//		
+//		// Create a customer for the test
+//		Customer customer = aCustomer().
+//							named("John Smith").
+//							withPhoneNumber("447766406373").build();
+//		
+//		// Create line items for the actual customer build
+//		List<LineItem> lineItems = new ArrayList<LineItem>();
+//		lineItems.add(
+//				aLineItem().forCall(aCall().startingNow().
+//		);	
+//		
+//		BillGenerator generator = new BillGenerator(printer);
+//		generator.send(	,
+//						
+//						);
+	}
+
+	@Test
+	public void testCustomerWithNoCalls() {
+		final Printer printer = context.mock(Printer.class);
+		
+		//BillGenerator generator = new BillGenerator(printer);
+		//generator.send(customer, calls, totalBill)
+	}
+
+	@Test
+	public void testCustomerWithManyCalls() {
+		final Printer printer = context.mock(Printer.class);
+		
+		//BillGenerator generator = new BillGenerator(printer);
+		//generator.send(customer, calls, totalBill)
+	}	
+}

@@ -1,0 +1,50 @@
+package com.acmetelecom.fakes;
+
+import java.util.Date;
+import java.util.Calendar;
+
+import com.acmetelecom.builders.Hour;
+import com.acmetelecom.builders.Minute;
+import com.acmetelecom.builders.Second;
+import com.acmetelecom.platform.Clock;
+
+public class FakeClock implements Clock {
+	private long baseMillis = 0;
+	private long currMillis = 0;
+	
+	public FakeClock(Date testDate) {
+		this.baseMillis = testDate.getTime();
+		this.currMillis = baseMillis;
+	}
+
+	public FakeClock(Calendar calendar) {
+		this.baseMillis = calendar.getTimeInMillis(); 
+		this.currMillis = baseMillis;
+	}
+	
+	@Override
+	public long currentTimeMillis() {
+		return this.currMillis;
+	}
+	
+	public void moveForward(Hour hour) {
+		this.currMillis += hour.getHour() * 60 * 60 * 1000;
+	}
+
+	public void moveForward(Minute minute) {
+		this.currMillis += minute.getMinute() * 60 * 1000;
+	}
+
+	public void moveForward(Second second) {
+		this.currMillis += second.getSecond() * 1000;
+	}
+
+	public void moveTo(Calendar calendar) {
+		this.currMillis = calendar.getTimeInMillis();
+	}
+	
+	@Override
+	public String toString() {
+		return "baseMillis=" + baseMillis + " currMillis=" + currMillis;
+	} 
+}

@@ -1,0 +1,201 @@
+package com.acmetelecom.test;
+
+import static com.acmetelecom.builders.CustomerBuilder.aCustomer;
+import static com.acmetelecom.builders.Second.Seconds;
+import static org.hamcrest.Matchers.equalTo;
+
+import java.util.Calendar;
+import java.util.LinkedList;
+import java.util.List;
+
+import com.acmetelecom.fakes.FakeClock;
+import org.jmock.Expectations;
+import org.jmock.integration.junit4.JUnitRuleMockery;
+import org.junit.Rule;
+import org.junit.Test;
+
+import com.acmetelecom.Call;
+import com.acmetelecom.ConfigurableBillingSystem;
+import com.acmetelecom.Generator;
+import com.acmetelecom.LineItem;
+import com.acmetelecom.customer.Customer;
+import com.acmetelecom.customer.CustomerDatabase;
+import com.acmetelecom.customer.Tariff;
+import com.acmetelecom.customer.TariffLibrary;
+import com.acmetelecom.rates.RateSelector;
+
+public class TestConfigurableBillingSystem {
+	@Rule
+	public final JUnitRuleMockery context = new JUnitRuleMockery();
+
+	private static org.hamcrest.Matcher<Iterable<LineItem>> iterableWithSize(int size) {
+		return org.hamcrest.collection.IsIterableWithSize.<LineItem>iterableWithSize(size);
+	}
+	
+	private static org.hamcrest.Matcher<String> anyString() {
+		return new org.hamcrest.core.IsAnything<String>();
+	}
+
+	private static org.hamcrest.Matcher<Call> anyCall() {
+		return new org.hamcrest.core.IsAnything<Call>();
+	}
+	
+	public TestConfigurableBillingSystem() {}
+	
+	@Test
+	public void testCreateCustomerBillWithNoCalls() {
+    	final CustomerDatabase customerDatabase = context.mock(CustomerDatabase.class);
+    	final TariffLibrary tariffLibrary = context.mock(TariffLibrary.class);
+    	final Generator generator = context.mock(Generator.class);
+    	final RateSelector selector = context.mock(RateSelector.class);
+    	
+    	FakeClock clock = new FakeClock(Calendar.getInstance());
+    	ConfigurableBillingSystem bs = new ConfigurableBillingSystem(
+    										customerDatabase, 
+    										tariffLibrary, 
+    										generator,
+    										selector,
+    										clock);
+
+    	final Customer c1 = aCustomer().
+								named("John Smith").
+								withPhoneNumber("447766406373").build();
+    	
+    	final List<Customer> customers = new LinkedList<Customer>();
+    	customers.add(c1);
+    	
+    	context.checking(new Expectations() {{
+    		allowing(customerDatabase).getCustomers(); will(returnValue(customers));
+    		oneOf(generator).send(
+    							with(equalTo(c1)), 
+    							with(iterableWithSize(0)), 
+    							with(anyString()));
+    	}});
+    	
+    	bs.createCustomerBills();    	
+	} 
+	
+	@Test
+	public void testCreateCustomerBillsWithSingleCallAndTwoCustomers() throws InterruptedException {
+    	final CustomerDatabase customerDatabase = context.mock(CustomerDatabase.class);
+    	final TariffLibrary tariffLibrary = context.mock(TariffLibrary.class);
+    	final Generator generator = context.mock(Generator.class);
+    	final RateSelector selector = context.mock(RateSelector.class);
+    	
+    	FakeClock clock = new FakeClock(Calendar.getInstance());
+    	ConfigurableBillingSystem bs = new ConfigurableBillingSystem(
+    										customerDatabase, 
+    										tariffLibrary, 
+    										generator,
+    										selector,
+    										clock);
+    	
+    	final Customer c1 = aCustomer().
+    							named("John Smith").
+    							withPhoneNumber("447766406373").build();
+    							
+    	final Customer c2 = aCustomer().
+    							named("Sarah Jones").
+    							withPhoneNumber("4479204334499").build();
+    	
+    	final List<Customer> customers = new LinkedList<Customer>();
+    	customers.add(c1);
+    	customers.add(c2);
+    	
+    	// We can test the protocol between the billing system and some of 
+    	// its collaborators, but not all of them.
+    	context.checking(new Expectations() {{
+    		allowing(customerDatabase).getCustomers(); will(returnValue(customers));
+    		allowing(selector).determineRates(with(Tariff.Business), with(anyCall()));
+    		
+    		oneOf(tariffLibrary).tarriffFor(c1); will(returnValue(Tariff.Business));
+    				
+    		oneOf(generator).send(
+					with(equalTo(c1)), 
+					with(iterableWithSize(1)), 
+					with(anyString()));
+    		
+    		oneOf(generator).send(
+					with(equalTo(c2)), 
+					with(iterableWithSize(0)), 
+					with(anyString()));    		
+    	}});
+    	
+    	// Even though we're now able to inject mock implementations for the 
+    	// customer and tariff databases, there are still a few problems:
+    	// test results depend on the time of the day when the test is run,
+    	// there is no way to sense the outputs of the billing system as it
+    	// produces HTML directly to the standard output, if we want to test
+    	// a call lasting for one hour, that is how long it will take for the 
+    	// full test to run.
+    	bs.callInitiated(c1.getPhoneNumber(), c2.getPhoneNumber());
+    	clock.moveForward(Seconds(10));
+    	bs.callCompleted(c1.getPhoneNumber(), c2.getPhoneNumber());
+    	bs.createCustomerBills();
+	}
+
+	@Test
+	public void testCreateCustomerBillsWithTwoCallsAndTwoCustomers() throws InterruptedException {
+    	final CustomerDatabase customerDatabase = context.mock(CustomerDatabase.class);
+    	final TariffLibrary tariffLibrary = context.mock(TariffLibrary.class);
+    	final Generator generator = context.mock(Generator.class);
+    	final RateSelector selector = context.mock(RateSelector.class);
+    	
+    	FakeClock clock = new FakeClock(Calendar.getInstance());
+    	ConfigurableBillingSystem bs = new ConfigurableBillingSystem(
+    										customerDatabase, 
+    										tariffLibrary, 
+    										generator,
+    										selector,
+    										clock);
+    	
+    	final Customer c1 = aCustomer().
+    							named("John Smith").
+    							withPhoneNumber("447766406373").build();
+    							
+    	final Customer c2 = aCustomer().
+    							named("Sarah Jones").
+    							withPhoneNumber("4479204334499").build();
+    	
+    	final List<Customer> customers = new LinkedList<Customer>();
+    	customers.add(c1);
+    	customers.add(c2);
+    	
+    	// We can test the protocol between the billing system and some of 
+    	// its collaborators, but not all of them.
+    	context.checking(new Expectations() {{
+    		allowing(customerDatabase).getCustomers(); will(returnValue(customers));
+    		allowing(selector).determineRates(with(Tariff.Business), with(anyCall()));
+    		
+    		oneOf(tariffLibrary).tarriffFor(c1); will(returnValue(Tariff.Business));
+    		oneOf(generator).send(
+					with(equalTo(c1)), 
+					with(iterableWithSize(1)), 
+					with(anyString()));
+    		
+    		oneOf(tariffLibrary).tarriffFor(c2); will(returnValue(Tariff.Business));
+    		oneOf(generator).send(
+					with(equalTo(c2)), 
+					with(iterableWithSize(1)), 
+					with(anyString()));    		
+    	}});
+    	
+    	// Even though we're now able to inject mock implementations for the 
+    	// customer and tariff databases, there are still a few problems:
+    	// test results depend on the time of the day when the test is run,
+    	// there is no way to sense the outputs of the billing system as it
+    	// produces HTML directly to the standard output, if we want to test
+    	// a call lasting for one hour, that is how long it will take for the 
+    	// full test to run.
+    	bs.callInitiated(c1.getPhoneNumber(), c2.getPhoneNumber());
+    	clock.moveForward(Seconds(10));
+    	bs.callCompleted(c1.getPhoneNumber(), c2.getPhoneNumber());
+
+    	bs.callInitiated(c2.getPhoneNumber(), c1.getPhoneNumber());
+    	clock.moveForward(Seconds(20));
+    	bs.callCompleted(c2.getPhoneNumber(), c1.getPhoneNumber());
+    	
+    	bs.createCustomerBills();
+	}
+}
+

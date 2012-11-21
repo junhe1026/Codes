@@ -1,0 +1,42 @@
+package com.acmetelecom.fakes;
+
+import com.acmetelecom.platform.Printer;
+
+import java.io.PrintStream;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Alexander
+ * Date: 30/11/2011
+ * Time: 11:38 πμ
+ * To change this template use File | Settings | File Templates.
+ */
+public class FakePrinter implements Printer {
+    private PrintStream out = null;
+
+	public FakePrinter(PrintStream out) {
+		this.out = out;
+	}
+
+    public void printHeading(String name, String phoneNumber, String pricePlan) {
+        out.print(name + "/" + phoneNumber + " - " + pricePlan + "\n");
+
+    }
+
+    public void printItem(String time, String callee, String duration, String cost)
+    {
+        cost = cost.replace(".", ",");
+        String rtime = time.split(" ")[1];
+        if(rtime.length() == 0) rtime = "0" + rtime;
+
+
+        out.print(rtime + "\t" + callee + "\t" + duration + "\t" +  cost +"\n");
+    }
+
+    public void printTotal(String total) {
+           total = total.replace(".", ",");
+        out.print("Total:" + "\t" + total + "\n");
+
+    }
+
+}

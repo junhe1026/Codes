@@ -1,0 +1,51 @@
+import fit.ColumnFixture;
+import fit.Parse;
+
+import static com.acmetelecom.builders.Second.Seconds;
+
+import java.util.Calendar;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Alexander
+ * Date: 30/11/2011
+ * Time: 4:50 μμ
+ * To change this template use File | Settings | File Templates.
+ */
+public class GivenTheseCallsAreMade extends ColumnFixture
+{
+    public String Starttime;
+	public String From;
+    public String To;
+    public int Duration;
+
+    @Override
+	public void doRows(Parse rows) {
+        SystemUnderTest.setTar();
+		SystemUnderTest.setBs();
+        super.doRow(rows);
+	}
+
+    @Override
+	public void reset() {
+		Starttime = null;
+		From = null;
+        To = null;
+        Duration = 0;
+	}
+
+	@Override
+	public void execute()
+    {
+        int hour = Integer.parseInt(Starttime.split(":")[0]);
+        int minutes = Integer.parseInt(Starttime.split(":")[1]);
+        Calendar datetime = Calendar.getInstance();
+        datetime.set(Calendar.HOUR_OF_DAY , hour);
+        datetime.set(Calendar.MINUTE , minutes);
+        datetime.set(Calendar.SECOND , 0);
+        SystemUnderTest.clock.moveTo(datetime);
+        SystemUnderTest.bs.callInitiated(From,To);
+        SystemUnderTest.clock.moveForward(Seconds(Duration));
+        SystemUnderTest.bs.callCompleted(From,To);
+	}
+}

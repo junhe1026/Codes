@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link href="files/css/fitnesse.css" rel="stylesheet" type="text/css" />
+
+    <title>Two calls during peak time only</title>
+  </head>
+
+  <body><h1>Two calls during peak time only</h1>
+  
+  <table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="2">Given the following tariff plans</td>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+
+        <td>On-peak Charge per 10 seconds in pence</td>
+      </tr>
+
+      <tr>
+        <td>Business</td>
+
+        <td>5</td>
+      </tr>
+
+      <tr>
+        <td>Leisure</td>
+
+        <td>20</td>
+      </tr>
+
+      <tr>
+        <td>Standard</td>
+
+        <td>10</td>
+
+      </tr>
+	  
+    </table>
+  
+  <table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="3">Given the following customers</td>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+
+        <td>Phone Number</td>
+
+        <td>Tariff Plan</td>
+      </tr>
+
+      <tr>
+        <td>Alice</td>
+
+        <td>447712345678</td>
+
+        <td>Leisure</td>
+      </tr>
+
+      <tr>
+        <td>Bob</td>
+
+        <td>447787654321</td>
+
+        <td>Business</td>
+      </tr>
+
+      <tr>
+        <td>Carol</td>
+
+        <td>447711223344</td>
+
+        <td>Business</td>
+      </tr>
+	  
+	  <tr>
+        <td>Diana</td>
+
+        <td>447744332211</td>
+
+        <td>Standard</td>
+      </tr>
+    </table>
+	
+	<table border="0">
+      <tr>
+        <td colspan="2">Given Peak Period  </td>
+      </tr>
+	  <tr>
+        <td>Start </td>
+		<td>End </td>
+      </tr>
+	  <tr>
+        <td>07:00 </td>
+		<td>19:00 </td>
+      </tr>
+    </table>
+	
+	<table border="0"
+      cellpadding="">
+      <tr>
+        <td colspan="4">Given these calls are made</td>
+      </tr>
+	  
+	  <tr>
+        <td>Start time</td>
+
+        <td>From</td>
+
+        <td>To</td>
+		
+		<td>Duration</td>
+      </tr>
+	  
+	  
+	  <tr>
+        <td>7:00</td>
+
+        <td>447744332211</td>
+
+        <td>447711223344</td>
+		
+		<td>30</td>
+      </tr>
+	  
+	  <tr>
+        <td>18:49</td>
+
+        <td>447712345678</td>
+
+        <td>447787654321</td>
+		
+		<td>600</td>
+      </tr>
+	  
+    </table>
+    
+    <p>The calls are charged based on the percentage in/out of peak time and based on the tariff plan.</p>
+  
+  <table bgcolor="" border="0">
+      <tr>
+        <td colspan="2">The charges are</td>
+      </tr>
+      
+      <tr>
+        <td>Phone no.</td>
+        <td>Total amount</td>
+		
+      </tr>
+	  
+	  <tr>
+        <td>447744332211</td>
+        <td>30</td>
+		
+      </tr>
+	  
+	  <tr>
+        <td>447712345678</td>
+        <td>1200</td>
+		
+      </tr>
+ 
+    </table></body>
+</html>

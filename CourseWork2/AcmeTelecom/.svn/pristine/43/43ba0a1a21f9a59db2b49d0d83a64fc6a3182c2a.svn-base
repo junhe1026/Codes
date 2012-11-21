@@ -1,0 +1,24 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FITTests" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="fitlibrary.runner.FolderRunner" />
+    <option name="VM_PARAMETERS" value="-javaagent:&quot;lib/jmock/jdave-unfinalizer-1.1.jar&quot; -classpath $PROJECT_DIR$/out/test/AcmeTelecom:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:$PROJECT_DIR$/out/production/AcmeTelecom:$PROJECT_DIR$/lib/external.jar:$PROJECT_DIR$/lib/junit-dep-4.8.2.jar:$PROJECT_DIR$/lib/jmock/objenesis-1.0.jar:$PROJECT_DIR$/lib/jmock/jmock-junit3-2.5.1.jar:$PROJECT_DIR$/lib/hamcrest-core-1.3.0RC1.jar:$PROJECT_DIR$/lib/jmock/jmock-junit4-2.5.1.jar:$PROJECT_DIR$/lib/jmock/cglib-nodep-2.1_3.jar:$PROJECT_DIR$/lib/jmock/hamcrest-core-1.1.jar:$PROJECT_DIR$/lib/jmock-junit4-2.6.0-RC2.jar:$PROJECT_DIR$/lib/junit-4.8.2-src.jar:$PROJECT_DIR$/lib/hamcrest-library-1.3.0RC1.jar:$PROJECT_DIR$/lib/jmock-2.6.0-RC2.jar:$PROJECT_DIR$/lib/jmock/jmock-legacy-2.5.1.jar:$PROJECT_DIR$/lib/jmock/jdave-unfinalizer-1.1.jar:$PROJECT_DIR$/lib/jmock/jdave-junit4-1.1.jar:$PROJECT_DIR$/lib/jmock/asm-3.0.jar:$PROJECT_DIR$/lib/jmock/asm-commons-3.0.jar:$PROJECT_DIR$/lib/jmock/asm-tree-3.0.jar:$PROJECT_DIR$/lib/jmock/jdave-core-1.1.jar:$PROJECT_DIR$/lib/fit/fitlibraryRunner-20070110.jar:&quot;$APPLICATION_HOME_DIR$/lib/idea_rt.jar&quot;" />
+    <option name="PROGRAM_PARAMETERS" value="doc/fit-docs/  doc/fit-reports" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.6.0_22" />
+    <option name="ENABLE_SWING_INSPECTOR" value="false" />
+    <option name="ENV_VARIABLES" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <module name="AcmeTelecom" />
+    <envs />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="54460" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Debug" />
+    <ConfigurationWrapper RunnerId="Run" />
+    <method />
+  </configuration>
+</component>

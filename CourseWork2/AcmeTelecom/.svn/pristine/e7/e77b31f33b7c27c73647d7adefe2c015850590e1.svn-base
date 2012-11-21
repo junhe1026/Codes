@@ -1,0 +1,59 @@
+package com.acmetelecom.fakes;
+
+import com.acmetelecom.customer.Tariff;
+import com.acmetelecom.customer.TariffLibrary;
+import org.jmock.Expectations;
+import org.jmock.integration.junit4.JUnitRuleMockery;
+import org.junit.runner.RunWith;
+import org.jmock.lib.legacy.ClassImposteriser;
+import jdave.junit4.JDaveRunner;
+import static org.junit.Assert.*;
+
+
+import java.math.BigDecimal;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: Alexander
+ * Date: 29/11/2011
+ * Time: 7:41 πμ
+ * To change this template use File | Settings | File Templates.
+ */
+@RunWith(JDaveRunner.class)
+public class FakeTariffLibrary implements TariffLibrary
+{
+    public final JUnitRuleMockery context = new JUnitRuleMockery() {{
+        setImposteriser(ClassImposteriser.INSTANCE);
+    }};
+
+    static Tariff bus;
+    static Tariff lei;
+    static Tariff std;
+
+    public FakeTariffLibrary(final BigDecimal boff, final BigDecimal bon, final BigDecimal loff,
+                             final BigDecimal lon, final BigDecimal soff, final BigDecimal son)
+    {
+        bus = context.mock( Tariff.class,"business");
+         lei = context.mock(Tariff.class, "leisure");
+        std = context.mock(Tariff.class, "standard");
+        context.checking(new Expectations() {{
+            allowing(bus).offPeakRate(); will(returnValue(boff) );
+            allowing(bus).peakRate(); will(returnValue(bon) );
+            allowing(lei).offPeakRate(); will(returnValue(loff) );
+            allowing(lei).peakRate(); will(returnValue(lon) );
+            allowing(std).offPeakRate(); will(returnValue(soff) );
+            allowing(std).peakRate(); will(returnValue(son) );
+
+        }});
+        assertTrue(true);
+    }
+
+    public Tariff tarriffFor(com.acmetelecom.customer.Customer customer)
+    {
+        String plan = customer.getPricePlan();
+        if (plan.equals("Business")) return bus;
+        if (plan.equals("Leisure")) return lei;
+        if (plan.equals("Standard")) return std;
+        return null; //TODO throw exception
+    }
+}
